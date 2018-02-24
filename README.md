@@ -1,3 +1,21 @@
+# TF Vision Lab
+
+This project is simply an extension of the Tensoflow Models repo, adding a package called 'experiments, in the research folder.
+
+In there there are features designed to allow easy experimental runs. The results to which get traked using Sacred. A seperate open project, for experiment tracking.
+
+This project is really just the glue to bind these two projects together in an accessible way. 
+
+## Recommended quick start:
+
+* If you haven't already, install Tensorflow 1.4 or above with GPU support for a compatible GPU
+* Clone this repo
+* `# From tensorflow/models/research/
+protoc object_detection/protos/*.proto --python_out=.`
+* `# From tensorflow/models/research/
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim`
+
+
 # TensorFlow Models
 
 This repository contains a number of different models implemented in [TensorFlow](https://www.tensorflow.org):
