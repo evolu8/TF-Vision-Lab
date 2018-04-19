@@ -1,0 +1,29 @@
+item {
+  id: 1
+  name: 'suspicious_mass'
+}
+
+item {
+  id: 2
+  name: 'suspicious_calcification'
+}
+
+item {
+  id: 3
+  name: 'suspicious_mass_with_calcification'
+}
+
+item {
+  id: 4
+  name: 'distortion'
+}
+
+item {
+  id: 5
+  name: 'focal_asymmetry'
+}
+
+item {
+  id: 6
+  name: 'distortion_with_focal_asymmetry'
+}
