@@ -116,8 +116,9 @@ def main(_):
       is_training=True)
 
   def get_next(config):
-    return dataset_util.make_initializable_iterator(
-        dataset_builder.build(config)).get_next()
+      iterator = dataset_builder.build(config).make_initializable_iterator()
+      tf.add_to_collection(tf.GraphKeys.TABLE_INITIALIZERS, iterator.initializer)
+      return iterator.get_next()
 
   create_input_dict_fn = functools.partial(get_next, input_config)
 
